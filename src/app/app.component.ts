@@ -18,8 +18,9 @@ constructor(private  authService :AuthService ){
   ngOnInit(){
 	   console.log(this.name);
     var loginFunc= this.authService.doGoogleLogin();
-    loginFunc.then(function () {
-     console.log("Promise Resolved");
+    loginFunc.then(function (res) {
+     console.log("Promise Resolved") ;
+      console.log(res);
 }).catch(function () {
      console.log("Promise Rejected");
 });
