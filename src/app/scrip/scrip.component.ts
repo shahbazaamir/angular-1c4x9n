@@ -10,6 +10,7 @@ export class ScripComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('scrip');
   }
 
 }
