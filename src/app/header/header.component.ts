@@ -8,15 +8,16 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+loginFunc;
   constructor(private authService: AuthService) { }
   action ="Login1";
   ngOnInit() {
   }
   login() {
-    var loginFunc = this.authService.doGoogleLogin();
-    loginFunc.then(function (res) {
+    this.loginFunc = this.authService.doGoogleLogin();
+    this.loginFunc.then(function (res) {
       console.log("Login done");
+      console.log( this.action);
       console.log(res);
       // this.action ="Log out";
     }).catch(function () {
