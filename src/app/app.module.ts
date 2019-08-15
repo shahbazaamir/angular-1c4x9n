@@ -14,6 +14,7 @@ import { ScripComponent } from './scrip/scrip.component';
 import { TradeComponent } from './trade/trade.component';
 import { BuyComponent } from './trade/buy/buy.component';
 import { AuthService } from './auth.service';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -23,7 +24,7 @@ import { AuthService } from './auth.service';
   AngularFirestoreModule, // imports firebase/firestore, only needed for database features
   AngularFireAuthModule
   ],
-  declarations: [ AppComponent, HelloComponent, ScripComponent, TradeComponent, BuyComponent ],
+  declarations: [ AppComponent, HelloComponent, ScripComponent, TradeComponent, BuyComponent, HeaderComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService]
 })
