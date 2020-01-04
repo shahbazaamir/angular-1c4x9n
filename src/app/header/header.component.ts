@@ -16,7 +16,7 @@ loginFunc;
   login() {
     this.loginFunc = this.authService.doGoogleLogin();
     this.loginFunc.then(function (res) {
-      console.log("Login done");
+      console.log("Login done success");
       console.log( this.action);
       console.log(res);
       // this.action ="Log out";
